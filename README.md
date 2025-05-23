@@ -1,4 +1,4 @@
-# EndGame - Gestor de Videojuegos Completados
+# EndGame - Tu Biblioteca de videojuegos
 
 [![PHP Version](https://img.shields.io/badge/PHP-7.4%2B-blue.svg)](https://www.php.net/)
 [![Cloudinary](https://img.shields.io/badge/Cloudinary-2.14.0-orange.svg)](https://cloudinary.com/)
