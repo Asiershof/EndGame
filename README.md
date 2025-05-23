@@ -5,10 +5,6 @@
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-purple.svg)](https://getbootstrap.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-<p align="center">
-  <img src="assets/img/logo.png" alt="EndGame Logo" width="150">
-</p>
-
 ## 📝 Descripción
 
 EndGame es una aplicación web que te permite gestionar y organizar los videojuegos que has completado. Podrás registrar información detallada, subir carátulas personalizadas y valorar tus experiencias de juego.
@@ -40,54 +36,6 @@ EndGame es una aplicación web que te permite gestionar y organizar los videojue
 - Servidor web (Apache, Nginx, etc.)
 - Composer
 
-## 🔧 Instalación
-
-1. Clona este repositorio:
-```bash
-git clone https://github.com/tu-usuario/EndGame.git
-```
-
-2. Navega al directorio del proyecto:
-```bash
-cd EndGame
-```
-
-3. Instala las dependencias con Composer:
-```bash
-composer install
-```
-
-4. Crea una base de datos MySQL y configura las credenciales:
-   - Importa el archivo `config/database.sql` para crear las tablas necesarias
-   - Actualiza `config/conexion.php` con tus credenciales de base de datos
-
-5. Configura Cloudinary:
-   - Regístrate en [Cloudinary](https://cloudinary.com/)
-   - Actualiza `config/cloudinary.php` con tus credenciales
-
-6. Abre la aplicación en tu navegador:
-```
-http://localhost/EndGame
-```
-
-## 📱 Demo
-
-<p align="center">
-  <img src="https://via.placeholder.com/800x500?text=Demo+EndGame" alt="Demo EndGame">
-</p>
-
-Puedes probar una demo en vivo aquí: [https://endgame-demo.ejemplo.com](https://endgame-demo.ejemplo.com)
-
-## 📸 Capturas de pantalla
-
-<p align="center">
-  <img src="https://via.placeholder.com/400x250?text=Pantalla+Inicio" alt="Pantalla de inicio" width="45%">
-  <img src="https://via.placeholder.com/400x250?text=Lista+Juegos" alt="Lista de juegos" width="45%">
-</p>
-<p align="center">
-  <img src="https://via.placeholder.com/400x250?text=Detalles+Juego" alt="Detalles de juego" width="45%">
-  <img src="https://via.placeholder.com/400x250?text=Perfil+Usuario" alt="Perfil de usuario" width="45%">
-</p>
 
 ## 📁 Estructura del proyecto
 
@@ -157,15 +105,13 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 ## 👨‍💻 Autor
 
-- **Tu Nombre** - [tu-usuario](https://github.com/tu-usuario)
+- **Asier Crespo** - [Asiershof](https://github.com/Asiershof)
 
 ## 📧 Contacto
 
 Si tienes alguna pregunta o sugerencia, no dudes en contactarme:
 
-- Email: [tu-email@ejemplo.com](mailto:tu-email@ejemplo.com)
-- Twitter: [@tuusuario](https://twitter.com/tuusuario)
-- LinkedIn: [Tu Nombre](https://www.linkedin.com/in/tu-perfil/)
+- LinkedIn: [Asier Crespo](https://www.linkedin.com/in/asiercrespotrapote/)
 
 ## 🙏 Agradecimientos
 
