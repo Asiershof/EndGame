@@ -8,6 +8,8 @@
 ## 📝 Descripción
 
 EndGame es una aplicación web que te permite gestionar y organizar los videojuegos que has completado. Podrás registrar información detallada, subir carátulas personalizadas y valorar tus experiencias de juego.
+<br><br>
+<a href="https://endgame.up.railway.app/">Accede a la página web</a>
 
 ## ✨ Características principales
 
