@@ -1,0 +1,393 @@
+/* ============================================
+   ESTILOS BASE
+============================================ */
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* ============================================
+   NAVEGACIÓN
+============================================ */
+.navbar {
+    background-color: #2c3e50 !important;
+}
+
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: #3498db !important;
+}
+
+.logo-animado {
+    transition: transform 0.3s;
+}
+
+.navbar-brand:hover .logo-animado {
+    transform: scale(1.1);
+}
+
+.marca-texto {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar .dropdown-toggle img.avatarCabecera {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.navbar-nav .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 15px;
+}
+
+.navbar-nav .nav-item:first-child {
+    margin-left: 0;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    margin-left: 0.5em;
+}
+
+.dropdown-menu {
+    min-width: 100%;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.dropdown-menu-end {
+    right: 0;
+    left: auto;
+}
+
+/* Menú móvil */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        margin-top: 0.5rem;
+        background-color: #2c3e50;
+        border-radius: 0 0 8px 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.329);
+        padding: 8px 0;
+        max-height: 80vh;
+    }
+    
+    .navbar-nav .nav-item {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 0;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .navbar-nav .nav-item:first-child {
+        border-top: none;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 15px 20px;
+        font-size: 1.1rem;
+        display: block;
+        width: 100%;
+    }
+    
+    .navbar-toggler {
+        padding: 10px 12px;
+    }
+}
+
+/* ============================================
+   PIE DE PÁGINA
+============================================ */
+footer {
+    background-color: #2c3e50;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+footer .hover-link:hover {
+    color: #3498db;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+/* ============================================
+   BOTONES
+============================================ */
+.btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+/* ============================================
+   TARJETAS
+============================================ */
+.tarjetaJuego {
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+    min-width: 220px;
+    max-width: 100%;
+    min-height: 340px;
+    padding: 10px 0;
+}
+
+.tarjetaJuego:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px #00000026 !important;
+}
+
+.tarjetaJuego .tituloTarjeta {
+    font-size: 1.15rem;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    margin-bottom: 0.5rem;
+}
+
+.listaJuegos .tarjetaJuego {
+    flex-direction: row;
+    min-height: 120px;
+    padding: 0;
+}   
+
+.listaJuegos .cuerpoTarjeta {
+    text-align: left !important;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 24px;
+    padding-right: 16px;
+}
+
+/* ============================================
+   IMÁGENES Y AVATARES
+============================================ */
+.contenedorImagenTarjeta {
+    min-height: 180px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border-radius: 8px
+}
+
+.contenedorImagenTarjeta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.listaJuegos .contenedorImagenTarjeta {
+    width: 160px;
+    min-width: 160px;
+    height: 140px;
+    min-height: 140px;
+    max-height: 140px;
+    border-radius: 8px 0 0 8px;
+}
+
+.sinCaratula {
+    color: #777;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.imagenJuego {
+    height: 400px;
+}
+
+.imagenJuego img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.contenedorAvatar {
+    position: relative;
+    display: inline-block;
+}
+
+.contenedorAvatar img {
+    border: 2px solid #d3d3d3;
+    transition: transform 0.3s;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.contenedorAvatar:hover img {
+    transform: scale(1.05);
+}
+
+.tamanoVistaAvatar {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #d3d3d3;
+}
+
+.tamanoAvatarPerfil {
+    width: 180px;
+    height: 180px;
+    border: 2px solid #d3d3d3;
+    object-fit: cover;
+}
+
+/* ============================================
+   SISTEMA DE PUNTUACIÓN
+============================================ */
+.estrellasPuntuacion {
+    display: inline-flex;
+    margin-left: 10px;
+}
+
+.estrella {
+    font-size: 24px;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.estrella.activa {
+    color: #ffc107;
+}
+
+.contenedorEstrellas .estrella {
+    font-size: 20px;
+    cursor: default;
+    pointer-events: none;
+}
+
+.estrellasMini {
+    color: #ffc107;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.puntuacionValor {
+    font-weight: bold;
+}
+
+.puntuacionJuego {
+    display: flex;
+    align-items: center;
+}
+
+.anchoPuntuacionInput {
+    max-width: 80px;
+}
+
+/* ============================================
+   FORMULARIOS
+============================================ */
+.fondoFormularioOscuro {
+    background: #495c6f;
+    color: #fff;
+}
+
+.fondoFormularioOscuro label,
+.fondoFormularioOscuro .form-label,
+.fondoFormularioOscuro .form-text {
+    color: #e0e0e0;
+}
+
+.fondoFormularioOscuro input,
+.fondoFormularioOscuro select,
+.fondoFormularioOscuro textarea {
+    background: #e5e5e5;
+}
+
+.fondoFormularioOscuro input:focus,
+.fondoFormularioOscuro select:focus,
+.fondoFormularioOscuro textarea:focus {
+    background: white;
+}
+
+.campoObligatorio::after {
+    content: " *";
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.form-control:focus {
+    border-color: #d9d9d940;
+    box-shadow: 0 0 0 .25rem rgba(217, 217, 217, 0.251);
+}
+
+/* ============================================
+   CONTENIDO
+============================================ */
+.contenidoReseña {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 5px;
+    line-height: 1.6;
+}
+
+.sinReseña {
+    color: #777;
+    font-style: italic;
+}
+
+/* ============================================
+   RESPONSIVE
+============================================ */
+@media (max-width: 767.98px) {
+    .listaJuegos .tarjetaJuego,
+    .tarjetaJuego {
+        min-width: 100%;
+        flex-direction: column;
+    }
+    
+    .listaJuegos .contenedorImagenTarjeta,
+    .contenedorImagenTarjeta {
+        min-width: 100%;
+        min-height: 220px;
+    }
+}
