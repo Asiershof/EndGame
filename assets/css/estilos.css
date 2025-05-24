@@ -93,6 +93,10 @@ main {
     left: auto;
 }
 
+.dropdown-item {
+    white-space: normal;
+}
+
 /* Menú móvil */
 @media (max-width: 991.98px) {
     .navbar-collapse {
