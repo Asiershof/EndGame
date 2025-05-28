@@ -50,7 +50,7 @@ main {
     height: 50px;
 }
 
-.navbar .dropdown-toggle img.avatarCabecera {
+img.avatarCabecera {
     width: 35px;
     height: 35px;
     object-fit: cover;
